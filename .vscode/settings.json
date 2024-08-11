@@ -1,0 +1,22 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#fb3c4c",
+    "activityBar.background": "#fb3c4c",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#0a5e02",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#fb3c4c",
+    "titleBar.activeBackground": "#fa0a1e",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#fa0a1e",
+    "titleBar.inactiveBackground": "#fa0a1e99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#fa0a1e",
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "Zhenglong"
+  ]
+}
