@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <meta name="description" content="Projects by Hejun Huang — large-scale systems, LLM agents, autonomous driving, and recommendation platforms.">
+  <meta name="author" content="Hejun Huang">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWSWCE7MTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EWSWCE7MTD');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-logo">Links</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="papers.html">Papers</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header reveal">
+    <h1>Projects</h1>
+    <p class="page-subtitle">Building systems at scale and pushing research boundaries</p>
+  </section>
+
+  <!-- ===== PROJECTS GRID ===== -->
+  <section class="projects-grid">
+
+    <!-- PROJECT 1 — Recommendation System -->
+    <div class="project-card reveal">
+      <div class="project-terminal-bar">
+        <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+        <span class="path">~/amazon/prime-video/harmonia</span>
+      </div>
+      <div class="project-body">
+        <div class="project-media">
+          <div class="project-placeholder">
+            <img src="images/pv.jpeg" alt="Kubrick project demo">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-status"><span class="status-dot live"></span> In Production</div>
+          <h3>Large-Scale Online Recommendation &amp; Distribution Platform</h3>
+          <p class="project-authors">Prime Video Core Tech &middot; Amazon, Seattle</p>
+          <p class="project-venue">Oct 2024 &ndash; Present</p>
+          <p class="project-desc">Architect and maintain the recommendation carousel system powering Prime Video&rsquo;s genre customer experience across millions of users globally. Built a universal recommendation engine that unifies content ranking, retrieval, and personalization into a single distribution platform serving real-time inference at scale.</p>
+          <div class="project-tags">
+            <span class="tag highlight">Kotlin</span>
+            <span class="tag highlight">AWS</span>
+            <span class="tag warm">Distributed Cache</span>
+            <span class="tag warm">SageMaker</span>
+            <span class="tag green">ML Ranking</span>
+            <span class="tag warm">DynamoDB</span>
+            <span class="tag">Spark</span>
+            <span class="tag">EMR Cluster</span>
+            <span class="tag">EMR Serverless</span>
+            <span class="tag">Bedrock</span>
+            <span class="tag green">A/B Testing</span>
+          </div>
+          <div class="project-metrics">
+            <span>10M+ daily requests</span>
+            <span>200M+ customers served</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 — Kubrick LLM Agent -->
+    <div class="project-card reveal">
+      <div class="project-terminal-bar">
+        <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+        <span class="path">~/research/kubrick-agent</span>
+      </div>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="images/spiderman.gif" alt="Kubrick project demo">
+        </div>
+        <div class="project-info">
+          <div class="project-status"><span class="status-dot research"></span> Research &middot; arXiv 2408.10453</div>
+          <h3>Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation</h3>
+          <p class="project-authors"><a href="https://Arking1995.github.io/">Liu He</a>, <a href="https://scholar.google.com/citations?user=IUj5R3EAAAAJ&hl=en">Yizhi Song</a>, <strong>Hejun Huang</strong>, Pinxin Liu, Yunlong Tang, Daniel Aliaga, <a href="https://scholar.google.com/citations?user=jd1S28YAAAAJ&hl=en&oi=sra">Xin Zhou</a></p>
+          <p class="project-venue">Baidu Research Institute &middot; Aug 2024</p>
+          <p class="project-desc">Pioneered the first multimodal VLM agent video generation pipeline. Multiple LLM/VLM agents collaborate as Director, Animator, and Compositor; decomposing natural language scripts into 3D scene graphs, generating Blender API, and rendering physically-grounded synthetic videos without manual CGI intervention.</p>
+          <div class="project-tags">
+            <span class="tag highlight">GPT-4V</span>
+            <span class="tag highlight">LLM Agents</span>
+            <span class="tag warm">Blender API</span>
+            <span class="tag warm">Python</span>
+            <span class="tag">3D Rendering</span>
+            <span class="tag">Scene Graphs</span>
+            <span class="tag green">Multi-Agent</span>
+          </div>
+          <div class="project-metrics">
+            <span>3+ VLM agents</span>
+            <span>Zero manual CGI</span>
+            <span>1st agent-based pipeline</span>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- PROJECT 3 — Cement Truck -->
+    <div class="project-card reveal">
+      <div class="project-terminal-bar">
+        <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+        <span class="path">~/baidu/apollo/cement-truck</span>
+      </div>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="images/cementtruck.gif" alt="Autonomous cement truck">
+        </div>
+        <div class="project-info">
+          <div class="project-status"><span class="status-dot shipped"></span> Shipped &middot; Baidu USA</div>
+          <h3>Autonomous Cement Truck &mdash; Planning, Control &amp; Perception</h3>
+          <p class="project-authors"><a href="http://research.baidu.com/Research_Areas/index-view?id=58">Robotics and Autonomous Driving Lab</a>, Baidu USA</p>
+          <p class="project-venue">Construction Engineering Corp. LTD &middot; 2024</p>
+          <p class="project-desc">End-to-end autonomous cement truck deployment on Baidu&rsquo;s Apollo platform. Customized the full-stack: perception (LiDAR + camera fusion), planning (hybrid A* + lattice), control (MPC-based trajectory tracking), and calibration modules. Validated driving data across open-road and closed-loop scenarios.</p>
+          <div class="project-tags">
+            <span class="tag highlight">C++</span>
+            <span class="tag highlight">Python</span>
+            <span class="tag warm">Apollo</span>
+            <span class="tag warm">ROS</span>
+            <span class="tag">LiDAR</span>
+            <span class="tag">MPC</span>
+            <span class="tag">Hybrid A*</span>
+            <span class="tag green">Real car testing</span>
+          </div>
+          <div class="project-metrics">
+            <span>Cement Truck Automation</span>
+            <span>Full-Stack autonomy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 - Mechanical Product Design -->
+    <div class="project-card reveal">
+      <div class="project-terminal-bar">
+        <div class="dots"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+        <span class="path">~/undergrad/mechanical-product-design</span>
+      </div>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="images/Undergraduate-Robot.png" alt="Undergraduate mechanical product design project">
+        </div>
+        <div class="project-info">
+          <div class="project-status"><span class="status-dot shipped"></span> Undergraduate Project</div>
+          <h3>Undergraduate Mechanical Product Design</h3>
+          <p class="project-authors">Undergraduate design, prototyping, and demo work</p>
+          <p class="project-venue">Two product design video demos</p>
+          <p class="project-desc">A small collection of undergraduate mechanical product design projects covering assistive robotics and self-service product concepts, with emphasis on concept development, mechanical structure design, prototyping, and final presentation.</p>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=L6Mi7WmN8E0" target="_blank" rel="noopener noreferrer">Assistant Robot for Patients with Cerebral Palsy</a>
+            <a href="https://www.youtube.com/watch?v=6QtJ0RxN9Jk" target="_blank" rel="noopener noreferrer">Self-service Hot Dog Maker</a>
+          </div>
+          <div class="project-tags">
+            <span class="tag highlight">Mechanical Design</span>
+            <span class="tag warm">Product Design</span>
+            <span class="tag warm">Prototyping</span>
+            <span class="tag">Assistive Robot</span>
+            <span class="tag">CAD</span>
+            <span class="tag green">Undergraduate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-left">
+      &copy; 2026 Hejun Huang &middot; Last updated May 2026
+    </div>
+    <div class="footer-right">
+      <a href="mailto:hi@huanghejun.com">hi@huanghejun.com</a>
+      <a href="https://github.com/Wogwan">GitHub</a>
+      <a href="https://www.linkedin.com/in/hejunhuang/">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=D0ijBQEAAAAJ&hl=en">Scholar</a>
+    </div>
+  </footer>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// ===== SCROLL REVEAL =====
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+})();
+</script>
+
+</body>
+</html>
